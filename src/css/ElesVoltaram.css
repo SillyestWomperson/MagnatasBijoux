@@ -1,0 +1,157 @@
+.eles-voltaram-section {
+	background-color: var(--magnatas-grey);
+	padding: 4rem;
+	color: var(--magnatas-gold);
+	font-family: var(--magnatas-font);
+}
+
+.eles-voltaram-top-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+.eles-voltaram-header {
+	text-align: left;
+}
+
+.eles-voltaram-header h2 {
+	font-size: 2.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0 0 0.5rem 0;
+}
+
+.eles-voltaram-header p {
+	font-size: 1.1rem;
+	font-style: italic;
+	color: #ccc;
+	margin: 0;
+}
+
+.categorias-nav {
+	display: flex;
+	gap: 2.5rem;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.categoria-btn {
+	background: none;
+	border: none;
+	color: var(--magnatas-gold);
+	font-family: var(--magnatas-font);
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+	padding-bottom: 8px;
+	position: relative;
+	transition: color 0.3s ease;
+	white-space: nowrap;
+}
+
+.categoria-btn:hover {
+	color: var(--magnatas-dark-gold);
+}
+
+.categoria-btn::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--magnatas-dark-gold);
+	transform: scaleX(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.categoria-btn.active::after {
+	transform: scaleX(1);
+}
+
+.produtos-container {
+	overflow: hidden;
+}
+
+.produtos-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+}
+
+.produto-card {
+	overflow: hidden;
+	display: block;
+	border-radius: 4px;
+}
+
+.produto-card img {
+	width: 100%;
+	display: block;
+	transition: transform 0.4s ease;
+}
+
+.produto-card:hover img {
+	transform: scale(1.05);
+}
+
+@keyframes slideOutLeft {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+}
+
+@keyframes slideInFromRight {
+	from {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOutRight {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+}
+
+@keyframes slideInFromLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.slide-out-to-left {
+	animation: slideOutLeft 0.3s forwards;
+}
+.slide-in-from-right {
+	animation: slideInFromRight 0.3s forwards;
+}
+
+.slide-out-to-right {
+	animation: slideOutRight 0.3s forwards;
+}
+.slide-in-from-left {
+	animation: slideInFromLeft 0.3s forwards;
+}

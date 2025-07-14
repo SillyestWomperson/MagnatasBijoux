@@ -1,0 +1,78 @@
+.categorias-section {
+	background-color: #1a1a1a;
+	padding: 4rem 4rem 6rem;
+	font-family: var(--magnatas-font);
+}
+
+.categorias-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2.5rem;
+	color: var(--magnatas-gold);
+	text-transform: uppercase;
+}
+
+.categorias-title {
+	font-size: 2.2rem;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+}
+
+.todos-produtos-link {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: var(--magnatas-gold);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.todos-produtos-link:hover {
+	color: var(--magnatas-dark-gold);
+}
+
+.categorias-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1.5rem;
+}
+
+.categoria-item {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.categoria-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.4s ease;
+}
+
+.categoria-item:hover img {
+	transform: scale(1.05);
+}
+
+.categoria-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	padding: 1.5rem;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 50%);
+}
+
+.categoria-item h3 {
+	color: var(--magnatas-gold);
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: 600;
+	letter-spacing: 1px;
+}

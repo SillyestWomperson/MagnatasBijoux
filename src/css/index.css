@@ -1,0 +1,19 @@
+:root {
+	--magnatas-gold: #f4e7c5;
+	--magnatas-dark-gold: #d4af37;
+	--magnatas-black: #3a3a3a;
+	--magnatas-grey: #2d2d2d;
+	--magnatas-font: "Cormorant Garamond", serif;
+}
+
+body {
+	margin: 0;
+	font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+		"Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
