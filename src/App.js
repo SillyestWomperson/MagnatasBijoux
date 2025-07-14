@@ -5,6 +5,7 @@ import "./css/App.css";
 
 import HomePage from "./pages/HomePage";
 import SobreNosPage from "./pages/SobreNosPage";
+import ColecoesPage from "./pages/ColecoesPage";
 
 const App = () => {
 	return (
@@ -14,6 +15,7 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/sobre-nos" element={<SobreNosPage />} />
+					<Route path="/new-collection" element={<ColecoesPage />} />
 					{/* ATENÇÃO: OUTRAS ROTAS VÃO VIR AQUI!!!! */}
 				</Routes>
 			</main>
