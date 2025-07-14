@@ -1,0 +1,35 @@
+.texto-final-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .titulo-final {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .linha-separadora {
+    width: 50%;
+    margin: 0 auto 20px;
+    border-top: 1px solid #777;
+  }
+  
+  .subtitulo-final {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: #ddd;
+  }
+  
+  .paragrafo-final {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #bbb;
+    line-height: 1.8;
+  }
+  
