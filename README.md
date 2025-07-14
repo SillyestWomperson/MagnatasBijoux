@@ -1,1 +1,1 @@
-só rodar `npm i` e dps `npm start`
+só rodar `npm i` e dps `npm start` eu
