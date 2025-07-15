@@ -21,7 +21,7 @@ const NavBar = () => {
 					<a href="/brincos" className="nav-link">
 						BRINCOS
 					</a>
-					<a href="/fale-conosco" className="nav-link">
+					<a href="/contato" className="nav-link">
 						FALE CONOSCO
 					</a>
 					<a href="/sobre-nos" className="nav-link">
