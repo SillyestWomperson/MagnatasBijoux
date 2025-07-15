@@ -1,0 +1,47 @@
+.form-mensagem {
+  position: absolute;
+  top: 40%;
+  right: 35%;
+  transform: translateY(-50%);
+  background-color: #1a1a1a;
+  color: #f3ce90;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  font-family: 'Cinzel', serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.form-mensagem h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.form-mensagem form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-mensagem input,
+.form-mensagem select,
+.form-mensagem textarea {
+  background-color: transparent;
+  border: 1px solid #f3ce90;
+  padding: 10px;
+  color: #f3ce90;
+}
+
+.form-mensagem button {
+  background-color: #f3ce90;
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-mensagem button:hover {
+  background-color: #fff0c1;
+}

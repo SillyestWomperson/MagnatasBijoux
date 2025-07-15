@@ -1,0 +1,49 @@
+.fale-conosco-background {
+  display: flex;
+  width: 100%;
+}
+
+.fale-texto {
+  flex: 1;
+  padding: 20px 40px; /* Reduzi o padding para algo mais compacto */
+  color: #f3ce90;
+  font-family: 'Cinzel', serif;
+}
+
+.fale-texto h2 {
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+
+.fale-texto h3 {
+  margin-top: 40px;
+  font-size: 25px;
+}
+
+.fale-texto p,
+.fale-texto ul {
+  font-size: 22px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.links-uteis ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links-uteis li {
+  margin-bottom: 6px;
+}
+
+.imagem-lateral {
+  flex: 1;
+  padding: 0;
+  margin-top: -20px; /* Movendo a imagem para cima */
+}
+
+.imagem-lateral img {
+  width: 100%;
+  height: 101%;
+  object-fit: cover;
+}
