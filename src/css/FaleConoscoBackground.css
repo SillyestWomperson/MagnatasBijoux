@@ -5,7 +5,7 @@
 
 .fale-texto {
   flex: 1;
-  padding: 20px 40px; /* Reduzi o padding para algo mais compacto */
+  padding: 20px 40px;
   color: #f3ce90;
   font-family: 'Cinzel', serif;
 }
@@ -39,7 +39,7 @@
 .imagem-lateral {
   flex: 1;
   padding: 0;
-  margin-top: -20px; /* Movendo a imagem para cima */
+  margin-top: -20px;
 }
 
 .imagem-lateral img {

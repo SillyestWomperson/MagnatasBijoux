@@ -1,0 +1,299 @@
+.profile-page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: calc(100vh - 100px - 150px);
+	padding: 4rem 0;
+	background-color: #1a1a1a;
+	font-family: var(--magnatas-font);
+	color: var(--magnatas-gold);
+}
+
+.profile-page-container.loading-state,
+.profile-page-container.error-state {
+	justify-content: center;
+	text-align: center;
+	padding-top: 10rem;
+}
+
+.profile-grid-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 4rem;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	align-items: start;
+}
+
+.profile-info-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 2rem;
+	background-color: var(--magnatas-grey);
+	border-radius: 8px;
+	border: 1px solid rgba(244, 231, 197, 0.2);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-header-section {
+	width: 100%;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 1px solid rgba(244, 231, 197, 0.1);
+}
+
+.profile-pic {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0 auto 1.5rem;
+	display: block;
+	border: 4px solid var(--magnatas-gold);
+	box-shadow: 0 0 20px rgba(244, 231, 197, 0.4);
+}
+
+.profile-name {
+	font-size: 3.8rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--magnatas-gold);
+	line-height: 1.1;
+}
+
+.profile-email {
+	font-family: sans-serif;
+	font-size: 1.3rem;
+	color: #ccc;
+	margin-bottom: 1rem;
+}
+
+.profile-actions-section {
+	width: 100%;
+	margin-top: auto;
+}
+
+.logout-button {
+	background-color: #444;
+	color: var(--magnatas-gold);
+	border: 1px solid var(--magnatas-gold);
+	padding: 0.8rem 1.5rem;
+	cursor: pointer;
+	font-family: var(--magnatas-font);
+	font-weight: 700;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	border-radius: 4px;
+	transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+	width: 100%;
+}
+
+.logout-button:hover {
+	background-color: #555;
+	color: var(--magnatas-dark-gold);
+}
+
+.profile-forms-column {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	padding: 2rem;
+	background-color: var(--magnatas-grey);
+	border-radius: 8px;
+	border: 1px solid rgba(244, 231, 197, 0.2);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-section {
+	padding-bottom: 2.5rem;
+	border-bottom: 1px solid rgba(244, 231, 197, 0.1);
+	text-align: left;
+}
+
+.profile-section:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.section-title {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin-bottom: 1.5rem;
+	color: var(--magnatas-gold);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.profile-action-button {
+	background-color: #3a3a3a;
+	color: var(--magnatas-gold);
+	border: 1px solid var(--magnatas-gold);
+	padding: 0.8rem 1.5rem;
+	cursor: pointer;
+	font-family: var(--magnatas-font);
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	border-radius: 4px;
+	transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+	margin-top: 0.5rem;
+	display: inline-block;
+}
+
+.profile-action-button:hover {
+	background-color: var(--magnatas-dark-gold);
+	color: var(--magnatas-black);
+}
+
+.profile-action-button:disabled {
+	background-color: #7a7a7a;
+	color: #b0b0b0;
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
+.profile-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.profile-form input {
+	background-color: #2d2d2d;
+	border: 1px solid var(--magnatas-gold);
+	padding: 0.8rem 1rem;
+	color: var(--magnatas-gold);
+	font-family: sans-serif;
+	font-size: 1rem;
+	border-radius: 4px;
+	outline: none;
+	transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-form input::placeholder {
+	color: #999;
+}
+
+.profile-form input:focus {
+	border-color: var(--magnatas-dark-gold);
+	box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.profile-form .submit-button {
+	background-color: var(--magnatas-gold);
+	color: var(--magnatas-black);
+	border: none;
+	padding: 0.9rem;
+	cursor: pointer;
+	font-family: var(--magnatas-font);
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	margin-top: 1rem;
+	transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-form .submit-button:hover {
+	background-color: var(--magnatas-dark-gold);
+}
+
+.profile-form .submit-button:disabled {
+	background-color: #7a7a7a;
+	color: #b0b0b0;
+	cursor: not-allowed;
+	opacity: 0.7;
+}
+
+.error-message {
+	color: #ff6b6b;
+	font-size: 0.85rem;
+	margin-top: 0.5rem;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+.warning-message {
+	color: #ffcc00;
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.delete-account-section .profile-action-button.delete-button {
+	background-color: #a00;
+	color: white;
+	border: none;
+}
+
+.delete-account-section .profile-action-button.delete-button:hover {
+	background-color: #d00;
+}
+
+.delete-confirmation-form {
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+
+.delete-confirmation-form input[type="password"] {
+    background-color: #2d2d2d;
+    border: 1px solid var(--magnatas-gold);
+    padding: 0.8rem 1rem;
+    color: var(--magnatas-gold);
+    font-family: sans-serif;
+    font-size: 1rem;
+    border-radius: 4px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+}
+
+.delete-confirmation-form input[type="password"]::placeholder {
+    color: #999;
+}
+
+.delete-confirmation-form input[type="password"]:focus {
+    border-color: var(--magnatas-dark-gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
+}
+
+.delete-confirmation-form .confirm-delete-button {
+	background-color: #d00;
+	color: white;
+	border: none;
+	padding: 0.9rem;
+	cursor: pointer;
+	font-family: var(--magnatas-font);
+	font-weight: 700;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-radius: 4px;
+	margin-top: 1rem;
+	transition: background-color 0.3s ease, opacity 0.3s ease;
+	width: 100%;
+}
+
+.delete-confirmation-form .confirm-delete-button:hover {
+	background-color: #f00;
+}
+
+.delete-confirmation-form .confirm-delete-button:disabled {
+	background-color: #7a7a7a;
+	color: #b0b0b0;
+	cursor: not-allowed;
+	opacity: 0.7;
+}

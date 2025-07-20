@@ -1,43 +1,48 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "../css/NavBar.css";
 import Logo from "../assets/img/logo.svg";
+import { useAuth } from "../context/AuthContext";
 
 const NavBar = () => {
+	const { isAuthenticated } = useAuth();
+
 	return (
 		<nav className="navbar-custom">
 			<div className="navbar-container">
-				<a href="/" className="navbar-brand">
+				<Link to="/" className="navbar-brand">
 					<img src={Logo} alt="Logo" className="navbar-logo" />
-				</a>
+				</Link>
 				<div className="navbar-links">
-					<a href="/new-collection" className="nav-link">
+					<Link to="/new-collection" className="nav-link">
 						NEW COLLECTION
-					</a>
-					<a href="/aneis" className="nav-link">
+					</Link>
+					<Link to="/aneis" className="nav-link">
 						ANÉIS
-					</a>
-					<a href="/colares" className="nav-link">
+					</Link>
+					<Link to="/colares" className="nav-link">
 						COLARES
-					</a>
-					<a href="/brincos" className="nav-link">
+					</Link>
+					<Link to="/brincos" className="nav-link">
 						BRINCOS
-					</a>
-					<a href="/contato" className="nav-link">
+					</Link>
+					<Link to="/contato" className="nav-link">
 						FALE CONOSCO
-					</a>
-					<a href="/sobre-nos" className="nav-link">
+					</Link>
+					<Link to="/sobre-nos" className="nav-link">
 						SOBRE NÓS
-					</a>
+					</Link>
 				</div>
 				<div className="navbar-icons">
 					<a href="#search" className="nav-icon">
 						<i className="fas fa-search"></i>
 					</a>
-					<a href="#user" className="nav-icon">
+					<Link to={isAuthenticated ? "/me" : "/login"} className="nav-icon">
 						<i className="fas fa-user"></i>
-					</a>
-					<a href="#cart" className="nav-icon">
+					</Link>
+					<Link to="/cart" className="nav-icon">
 						<i className="fas fa-shopping-bag"></i>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</nav>
