@@ -36,7 +36,7 @@ const todosOsProdutos = [
 	{ id: 13, category: "Pulseira", image: Pulseira1, link: "/produto/13" },
 	{ id: 14, category: "Pulseira", image: Pulseira2, link: "/produto/14" },
 	{ id: 15, category: "Pulseira", image: Pulseira3, link: "/produto/15" },
-	{ id: 16, category: "Pulseira", image: Pulseira4, link: "/produto/16" },
+	{ id: 16, category: "Pulseira", image: Pulseira4, link: "/produto/PULSEIRA003" },
 ];
 
 const categories = ["Brincos", "Anéis", "Colares", "Pulseira", "Todos"];

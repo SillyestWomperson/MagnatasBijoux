@@ -11,6 +11,7 @@ import FaleConoscoPage from "./pages/FaleConoscoPage";
 import AuthPage from "./pages/AuthPage";
 import ProfilePage from "./pages/ProfilePage";
 import CartPage from "./pages/CartPage";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 
 const App = () => {
 	return (
@@ -26,6 +27,7 @@ const App = () => {
 					<Route path="/register" element={<AuthPage />} />
 					<Route path="/me" element={<ProfilePage />} />
 					<Route path="/cart" element={<CartPage />} />
+					<Route path="/produto/:productId" element={<ProductDetailsPage />} />
 					{/* ATENÇÃO: OUTRAS ROTAS VÃO VIR AQUI!!!! */}
 				</Routes>
 			</main>
